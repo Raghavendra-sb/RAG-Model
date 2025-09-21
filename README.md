@@ -46,9 +46,9 @@ The chatbot will prompt you to enter a query. To exit, type exit, quit, or bye.
 ### 💡 How It Works
 This project is a perfect example of a RAG pipeline:
 
-## Ingestion: The main.py script loads a PDF, splits it into manageable chunks, and uses the Hugging Face embeddings model to convert each chunk into a vector.
+Ingestion: The main.py script loads a PDF, splits it into manageable chunks, and uses the Hugging Face embeddings model to convert each chunk into a vector.
 
-## Storage: These vectors are then stored in the Qdrant vector database.
+Storage: These vectors are then stored in the Qdrant vector database.
 
 Retrieval: When you ask a question, the chat.py script converts that question into a vector and performs a similarity search in Qdrant to find the most relevant document chunks.
 
